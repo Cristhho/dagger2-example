@@ -2,7 +2,7 @@ package dev.cristhhq.dagger2.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class owner {
+public class Owner {
 
     private String login;
 

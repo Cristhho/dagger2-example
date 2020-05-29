@@ -15,6 +15,8 @@ import dev.cristhhq.dagger2.ui.login.Login;
 import dev.cristhhq.dagger2.ui.login.LoginPresenter;
 import dev.cristhhq.dagger2.ui.profile.Profile;
 import dev.cristhhq.dagger2.ui.profile.ProfilePresenter;
+import dev.cristhhq.dagger2.ui.webservice.WebService;
+import dev.cristhhq.dagger2.ui.webservice.WebServicePresenter;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -89,6 +91,12 @@ public class AppModule {
     @Singleton
     public Profile.Presenter provideProfilePresenter(User user) {
         return new ProfilePresenter(user);
+    }
+
+    @Provides
+    @Singleton
+    public WebService.Presenter provideWebServicePresenter(User user, ApiClient apiClient) {
+        return new WebServicePresenter(user, apiClient);
     }
 
 }

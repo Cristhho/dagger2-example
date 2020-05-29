@@ -1,7 +1,5 @@
 package dev.cristhhq.dagger2.model;
 
-import java.security.acl.Owner;
-
 public class GitHubRepo {
 
     private String name;

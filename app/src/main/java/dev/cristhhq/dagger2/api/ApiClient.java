@@ -9,6 +9,6 @@ import retrofit2.http.Path;
 
 public interface ApiClient {
 
-    @GET("/user/{user}/repos")
+    @GET("/users/{user}/repos")
     Call<List<GitHubRepo>> getReposByUser(@Path("user")String user);
 }
