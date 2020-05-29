@@ -20,9 +20,9 @@ public class LoginPresenter implements Login.Presenter {
     @Override
     public void validateUser(String user, String pass) {
         if (view != null) {
-            if(user.equals("alberto")&&pass.equals("1234")){
-                this.user.setUserName("Alberto Palomar");
-                this.user.setAge("30");
+            if(user.equals("christian")&&pass.equals("1234")){
+                this.user.setUserName("Christian Ochoa");
+                this.user.setAge("25");
                 view.validUser();
             }else{
                 view.error();
