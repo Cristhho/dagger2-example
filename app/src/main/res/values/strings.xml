@@ -10,4 +10,6 @@
     <string name="save">Save</string>
     <string name="logout">Logout</string>
     <string name="next_activity">Next activity</string>
+    <string name="back_profile">Back to profile</string>
+    <string name="request">Do web request</string>
 </resources>
