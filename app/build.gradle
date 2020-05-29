@@ -41,7 +41,7 @@ dependencies {
 
     //retrofit
     implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
-    implementation "com.google.code.gson:gson:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
