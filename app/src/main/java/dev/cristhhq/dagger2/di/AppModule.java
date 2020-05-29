@@ -10,6 +10,8 @@ import dagger.Provides;
 import dev.cristhhq.dagger2.model.User;
 import dev.cristhhq.dagger2.ui.login.Login;
 import dev.cristhhq.dagger2.ui.login.LoginPresenter;
+import dev.cristhhq.dagger2.ui.profile.Profile;
+import dev.cristhhq.dagger2.ui.profile.ProfilePresenter;
 
 @Module
 public class AppModule {
@@ -42,6 +44,12 @@ public class AppModule {
     @Singleton
     public Login.Presenter provideLoginPresenter(User user) {
         return new LoginPresenter(user);
+    }
+
+    @Provides
+    @Singleton
+    public Profile.Presenter provideProfilePresenter(User user) {
+        return new ProfilePresenter(user);
     }
 
 }
