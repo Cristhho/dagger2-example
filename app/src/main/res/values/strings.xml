@@ -4,4 +4,10 @@
     <string name="user">User</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="profile_title">This is your profile</string>
+    <string name="name">Name</string>
+    <string name="age">age</string>
+    <string name="save">Save</string>
+    <string name="logout">Logout</string>
+    <string name="next_activity">Next activity</string>
 </resources>
